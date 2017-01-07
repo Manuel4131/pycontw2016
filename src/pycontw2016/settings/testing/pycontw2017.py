@@ -1,10 +1,15 @@
 import os
 
-from .base import BASE_DIR, TEMPLATES
+from .base import STATICFILES_DIRS, TEMPLATES
 from .base import *     # noqa
 
 
 CONFERENCE_DEFAULT_SLUG = 'pycontw-2017'
-TEMPLATES[0]['DIRS'][1] = os.path.join(BASE_DIR, 'templates', 'pycontw-2017')
+TEMPLATES[0]['DIRS'][0] = os.path.join(
+    TEMPLATES[0]['DIRS'][0], CONFERENCE_DEFAULT_SLUG,
+)
+STATICFILES_DIRS[0] = os.path.join(
+    STATICFILES_DIRS[0], CONFERENCE_DEFAULT_SLUG,
+)
 
 EVENTS_PUBLISHED = False

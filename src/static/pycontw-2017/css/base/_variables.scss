@@ -1,9 +1,17 @@
 $static_root: "./../../";
 
+$bright-sea-green: #00ff96 !default;
+$water-blue:       #1697e5 !default;
+$sand-yellow:      #fbda61 !default;
+$reddish-orange:   #f75b1c !default;
+
 $theme-color: #3E6DF5; //blue
 $theme-focus: #FFC525; // yellow
 
 $quote-color: $theme-focus;
+
+// nav
+$navbar-em-color: #367ABD;
 
 // section
 $section__heading-color: $theme-color;
@@ -43,8 +51,10 @@ $sponsor-silver-color: #a1a1a1;
 $sponsor-gold-color: #ffc525;
 $sponsor-platinum-color: #eddcad;
 
-// Buttons
+// proposals
+$proposals-alert-warning-background-color: $sand-yellow;
 
+// Buttons
 $btn-primary-hover-bg: #0b38ba;
 
 $btn-focus-color: #fff;
